@@ -154,7 +154,15 @@
                 prompt("Copie a chave abaixo:", chavePix);
             });
         }
+        function mostrarAlerta() {
+            var x = document.getElementById("custom-alert");
+            x.className = "show";
+            
+            // Depois de 3 segundos (3000ms), remove a classe show para sumir
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
     </script>
 
 </body>
+
 </html>
